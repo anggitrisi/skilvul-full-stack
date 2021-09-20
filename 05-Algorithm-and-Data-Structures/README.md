@@ -43,24 +43,21 @@
     iterationPlus = 0
     output = TRUE
 
-    WHILE iteration >= 0
+    WHILE iterationPlus < panjang_kata/2
       IF kata[iterationPlus] IS NOT kata[iterationMin] THEN
           output = FALSE
       ENDIF
 
       iterationMin--
       iterationPlus++
-
-      DISPLAY kata[iteration]
-
-      iteration = iteration + 1
-
+  
+    DISPLAY output
     DISPLAY "SELESAI"
 
 # 04-skilvul-grading
     INPUT nilai_siswa 
 
-    IF (nilai_siswa < 68>) THEN
+    IF (nilai_siswa < 68) THEN
       DISPLAY nilai_siswa
     ELSE
       IF nilai_siswa % 5 >= 3

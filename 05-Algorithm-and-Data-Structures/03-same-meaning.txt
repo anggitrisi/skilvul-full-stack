@@ -1,19 +1,18 @@
 INPUT kata 
 
-PANJANG_KATA = LEN KATA 
+panjang_kata = LEN kata 
 
-iterationMin = PANJANG_KATA - 1
+iterationMin = panjang_kata - 1
 iterationPlus = 0
 
 output = TRUE
 
-WHILE iteration >= 0
-  IF KATA[iterationPlus] IS NOT KATA[iterationMin] THEN
+WHILE iterationPlus < panjang_kata/2
+  IF kata[iterationPlus] IS NOT kata[iterationMin] THEN
       output = FALSE
   ENDIF
   iterationMin--
   iterationPlus++
-   DISPLAY kata[iteration]
-   iteration = iteration + 1
 
+DISPLAY ouput
 DISPLAY "SELESAI"
