@@ -4,7 +4,7 @@
 Link Repository: https://github.com/anggitrisi/git-basic
 
 ## 02-portfolio-and-cv
-Link Repository: https://github.com/anggitrisi/skilvul-full-stack/04-Git-and-Github/anggitri-sihombing
+Link Repository: https://github.com/anggitrisi/anggitri-sihombing
 ![02 graph screenshot](./02-graph.png)
 
 ## 03-branch-and-merge
