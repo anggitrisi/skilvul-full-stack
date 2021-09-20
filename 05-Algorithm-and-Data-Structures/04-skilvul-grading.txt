@@ -1,12 +1,12 @@
-INPUT NILAI_SISWA 
+INPUT nilai_siswa 
 
-IF (NILAI_SISWA < 68>) THEN
-  DISPLAY NILAI_SISWA
+IF (nilai_siswa < 68>) THEN
+  DISPLAY nilai_siswa
 ELSE
-  IF NILAI_SISWA % 5 >= 3
-    DISPLAY NILAI_SISWA + (5 - NILAI % 5)
+  IF nilai_siswa % 5 >= 3
+    DISPLAY nilai_siswa + (5 - nilai_siswa % 5)
   ELSE
-    DISPLAY NILAI_SISWA
+    DISPLAY nilai_siswa
 ENDIF
 
 DISPLAY "SELESAI"

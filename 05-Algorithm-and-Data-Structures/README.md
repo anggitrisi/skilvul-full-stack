@@ -61,7 +61,7 @@
       DISPLAY nilai_siswa
     ELSE
       IF nilai_siswa % 5 >= 3
-        DISPLAY nilai_siswa + (5 - NILAI % 5)
+        DISPLAY nilai_siswa + (5 - nilai_siswa % 5)
       ELSE
         DISPLAY nilai_siswa
     ENDIF
