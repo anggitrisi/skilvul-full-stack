@@ -16,6 +16,6 @@ Link Repository: https://github.com/anggitrisi/skilvul-full-stack/tree/main/04-G
 Link Repository: https://github.com/anggitrisi/skilvul-full-stack/tree/main/04-Git-and-Github/04-more-advanced
 
 ## 05-submit-my-changes
-Link Pull Request: https://github.com/impactbyte/tech4impact-students-bio/pull/99
+Link Pull Request: https://github.com/impactbyte/tech4impact-students-bio/pull/26
 
 Image: Screenshot of my Pull Request
