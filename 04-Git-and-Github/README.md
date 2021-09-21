@@ -27,5 +27,7 @@ Link Repository: https://github.com/anggitrisi/skilvul-full-stack/tree/main/04-G
 ## 05-submit-my-changes
 Link Pull Request: https://github.com/impactbyte/tech4impact-students-bio/pull/26
 
+`README.md` untuk perintah-perintah: https://github.com/anggitrisi/skilvul-full-stack/tree/main/04-Git-and-Github/05-submit-my-changes
+
 ###Image: Screenshot of my Pull Request
 ![05 submit my changes](./05-submit-my-changes.JPG)
