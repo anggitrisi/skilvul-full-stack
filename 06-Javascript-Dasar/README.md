@@ -44,3 +44,6 @@ Link repli.it to try:https://replit.com/@anggithreesi/08-DOM
 Link Repository: https://github.com/anggitrisi/skilvul-full-stack/blob/main/06-Javascript-Dasar/08-DOM-soal2.html
 
 Link repli.it to try: https://replit.com/@anggithreesi/08-DOM
+
+### disclaimer
+result akan muncul di repli.it setelah beberapa detik (5-10 detik)
