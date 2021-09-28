@@ -188,8 +188,8 @@
       for (let i = 0; i < cardElements.length;i++){
         const cardElement = cardElements[i];
         cardElement.addEventListener("click", function(){
-          document.getElementById("modal-title").innerText = this.querySelector(".card-title").innerText;
-          document.getElementById("modal-text").innerText = this.querySelector(".card-text").innerText;
+          document.getElementById("modal-title").textContent = this.querySelector(".card-title").textContent;
+          document.getElementById("modal-text").textContent = this.querySelector(".card-text").textContent;
           document.getElementById("modal-text").classList.add("nowrap");
           document.getElementById("modal-image").src = this.querySelector(".card-img-top").getAttribute("src");
 

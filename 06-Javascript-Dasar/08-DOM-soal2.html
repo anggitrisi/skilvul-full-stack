@@ -179,21 +179,27 @@
         const username = elInputUsername.value;
         const comment = elInputComment.value;
 
-        //create <div> content
-        const newContentOfComment = document.createElement("div");
-        newContentOfComment.classList.add("fw-bold","text-capitalize");
-        newContentOfComment.innerText = username;
+        // //create <div> content
+        // const newContentOfComment = document.createElement("div");
+        // newContentOfComment.classList.add("fw-bold","text-capitalize");
+        // newContentOfComment.innerText = username;
 
-        //create <div> wrapper
-          const newWrapperOfComment = document.createElement("div");
-          newWrapperOfComment.classList.add("ms-2", "me-auto");
-          newWrapperOfComment.append(newContentOfComment);
-          newWrapperOfComment.append(comment);
+        // //create <div> wrapper
+        //   con  st newWrapperOfComment = document.createElement("div");
+        //   newWrapperOfComment.classList.add("ms-2", "me-auto");
+        //   newWrapperOfComment.append(newContentOfComment);
+        //   newWrapperOfComment.append(comment);
+
+        const lastCommentList = elCommentList.lastElementChild;
+        const divCommentList = lastCommentList.firstElementChild;
+        const cloneDiv = divCommentList.cloneNode(true);
+        cloneDiv.firstElementChild.innerText = username;
+        cloneDiv.childNodes[2].textContent = comment;
 
           //crea te <li>
             const newComment = document.createElement("li");
             newComment.classList.add("list-group-item", "d-flex", "justify-content-between","align-items-start");
-            newComment.append(newWrapperOfComment);
+            newComment.append(cloneDiv);
 
             elCommentList.prepend(newComment);
 
