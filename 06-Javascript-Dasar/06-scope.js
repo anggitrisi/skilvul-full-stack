@@ -59,16 +59,25 @@ Pada kode program diatas variabel `ruang2` dideklarasikan didalam blok `if` sehi
 
 /// Soal - 02
 /// Kamu diminta untuk melakukan analisa terhadap baris kode dibawah ini
+const name = "John Watson";
+
+function printFirstName(name) {
+  return name.split(" ")[0];
+}
+
+console.log(printFirstName("Mariah Carey"));
+
+/// WRITE YOUR ANALYSIS HERE
 
 /// - apa yang akan tampil didalam console.log ?
 /*
-Yang akan ditampilkan dalam console.log adalah nama pertama dari kata pertama dari argumen "Mariah Carey" yaitu Mariah
+Yang akan ditampilkan dalam console.log adalah nama pertama dari kata pertama dari argumen "Mariah Carey" yaitu "Mariah"
 */
 
 
 /// - apa alasan yang menyebabkan hasil dari console itu bukan nilai dari variable name?
 /*
-Alasannya adalah karena pada fungsi printFirstName(name), name disini bukan merujuk atau bukan akan diisi dengan nilai dari variable name. Melainkan name disini adalah sebuah parameter dan sast fungsi printFirstName(name) dipanggil dengan kode :
+Alasannya adalah karena pada fungsi printFirstName(name), name disini bukan merujuk atau bukan akan diisi dengan nilai dari variable name. Melainkan name disini adalah sebuah parameter dan saat fungsi printFirstName(name) dipanggil dengan kode :
 
 console.log(printFirstName("Mariah Carey"));
 
@@ -77,12 +86,5 @@ dilakukan pengiriman argumen "Mariah Carey" ke parameter fungsi sehingga yang di
 dimana string "Mariah Carey" dengan fungsi split (" ") akan dibagi menjadi array, yaitu ['Mariah', 'Carey'] dan hasil dari name.spilt(" ")[0] akan mengembalikan indeks-ke 0 dari array, yaitu Mariah
 */
 
-/// WRITE YOUR ANALYSIS HERE
-///
-const name = "John Watson";
 
-function printFirstName(name) {
-  return name.split(" ")[0];
-}
 
-console.log(printFirstName("Mariah Carey"));
