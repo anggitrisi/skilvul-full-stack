@@ -1,26 +1,24 @@
-const isR18Plus = function(age) { 
-  return new Promise((resolve,reject)=>{
-    if(age >= 18){
-      resolve("Anda sudah dewasa")
-    }
-    else {
+const isR18Plus = function (age) {
+  let checkAge = age >= 18;
+  return new Promise((resolve, reject) => {
+    if (checkAge) {
+      resolve("Anda sudah dewasa");
+    } else {
       reject("Anda masih dibawah umur");
     }
-  })
-}
+  });
+};
 
 const printR18Plus = async () => {
-  try{
-    const underAge = await isR18Plus(10);
-    const properAge = await isR18Plus(19);
-    console.log(underAge);
-    console.log(properAge);
-  } catch (error) {
-    console.log(error)
-  }
-}
+  const underAge = await isR18Plus(10)
+    .then((e) => e)
+    .catch((e) => e);
+  const properAge = await isR18Plus(19)
+    .then((e) => e)
+    .catch((e) => e);
 
-printR18Plus()
+  console.log(underAge);
+  console.log(properAge);
+};
 
-
-
+printR18Plus();
