@@ -66,4 +66,6 @@ Link repli.it to try: https://replit.com/@anggithreesi/07-web-storage#index.html
 ## 08-asynchronous
 
 Link Repository: https://github.com/anggitrisi/skilvul-full-stack/tree/main/07-Javascript-Intermediate/08-asynchronous
-Link repli.it to try:https://replit.com/@anggithreesi/08-asynchronous#index.html
+Link repli.it to try:
+02 : https://replit.com/@anggithreesi/08-asynchronous-soal-02#index.js
+03-04 : https://replit.com/@anggithreesi/08-asynchronous#index.html
