@@ -1,0 +1,11 @@
+Soal 1
+
+1. Apa itu localStorage?
+localStorage merupakan sebuah penyimpanan data yang tidak memiliki masa expired jadi data tersebut akan tetap tersimpan dalam host sampai kita melakukan delete item.
+Datanya berupa json yang dikonversi jadi string (tipe data hanya boleh string) 
+
+2. Apa itu cookies?
+Cookies adalah data kecil yang dikirim dari situs web dan disimpan di komputer kita oleh web browser saat kita menjelajah. Disebut data kecil karena maksimum data yang dapat disimpan dalam cookies adalah 4096 bytes (4 KB). Biasanya data yang disimpan di cookies adalah access token pengguna saat login atau data pencarian saat melakukan pencarian pada situs web tertentu. Hal ini yang biasanya dilakukan oleh situs pencarian untuk melacak pencarian kita dan menampilkan iklan yang berhubungan dengan pencarian kita sebelumnya.
+
+3. Apa perbedaan antara localStorage dan sessionStorage?
+- pada localStorage data disimpan tanpa tanggal kadaluarsa sedangkan pada session storage data disimpan selama browser terbuka dan akan hilang ketika session dari sebuah laman berakhir.
