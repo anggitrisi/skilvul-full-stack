@@ -1,0 +1,20 @@
+Kamu diminta untuk melakukan analisa sederhana terhadap beberapa masalah dan tuliskan jawaban kamu di dalam file 08-bootstrap-soal-01.txt.
+
+1. Apa itu CSS Framework?
+CSS framework adalah library CSS yang digunakan untuk membuat standarisasi layout dan thema dari website. Dengan menggunakan CSS framework akan membantu developer untuk membangun website.
+
+2. Apakah bootstrap satu-satunya CSS Framework yang dapat kita gunakan?
+Tidak, masih ada banyak CSS Framewoek lain 
+
+3. Sebutkan beberapa CSS Framework selain Bootstrap
+Beberapa CSS Framework selain bootstrap yaitu Tailwind, Skeleton, Foundation, UIKit, Susi, Miligram dll
+
+4. Bagaimana tata cara penggunaan Bootstrap?
+Ada dua cara dalam menggunakan bootstrap, yaitu
+- Dengan menginstall bootstrap secara offline, dengan cara ini folder bootstrap perlu didownload dari https://getbootstrap.com/. Kemudian ambil folder Js dan CSS dan pindahkan kedalam folder baru bernama vendor direpositori. Pada halaman yang akan menggunakan bootstrap panggil file bootstrap.min.css dengan link rel dan file bootstrap.bundle.min.js perlu dipanggil dengan script js
+- dengan menginstal bootsrap secara online (menggunakan CDN), dengan cara ini kita perlu memanggil css dan js secara online dengan syntax
+```
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+```

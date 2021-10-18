@@ -1,0 +1,44 @@
+1. Apa itu responsive web design?
+Responsive web design adalah cara membuat website agar dapat diakses dari device manapun seperti laptop/PC , smartphone, dan tablet. 
+
+2. Sebutkan apa saja relative units yang dimiliki oleh CSS?
+relative length unit pada css, yaitu
+a. em - ukurannya relative terhadap font-size dari parent atau font-size dari element itu sendiri 'saat ini'
+jadi misal style css nya berikut
+
+body {
+font-size: 15px;
+}
+div {
+    font-size: 1.5em; // calculated at 15px * 1.5, or 22.5px
+}
+
+jadi elemen div akan memiliki font-size sebesar 1.5 em = 1.5 * font-size saat ini (body) = 1.5 * 15px = 22.5px
+
+b. rem - ukurannya relative terhadap font-size root elemen (<html>), huruf r pada rem berarti root
+
+c. vh - ukurannya relatif terhadap tinggi viewportnya(ukuran jendela atau aplikasi); 5vh = 5/100 dari tinggi viewportnya
+
+d. vw - ukurannya relatif terhadap lebar viewportnya; 5vh = 5/100 dari lebar viewportnya
+
+e. vmin - ukurannya relatif terhadap ukuran viewport yang lebih keci
+
+misal, pada orientasi potrait ukuran lebar lebih kecil dari pada ukuran tinggi maka 
+1 vmin = 1/100 dari ukuran lebar (ukuran viewport yang lebih kecil)
+misal, pada orientasi landscape ukuran lebar lebih besar dari ukuran tinggi maka 
+1 vmin = 1/100 dari ukuran tingginya (ukuran viewport yang lebih kecil)
+
+f. ch - ukurannya relatif terhadap lebar dari karakter 0
+
+g. ex - ukurannya relatif terhadap tinggi dari karakter x
+
+h. % - ukurannya relatif terhadap parent element
+
+3. Apa itu breakpoint? Bagaimana cara kita membuat hal tersebut?
+titik ukuran dimana dengan ukuran screen tersebut terjadi perubahan tampilan. Breakpoint biasanya dibuat berdasarkan ukuran lebar screen device
+
+4. Apa yang dapat kita gunakan untuk memanipulasi tata letak suatu element dalam bidang 1 dimensi?
+memanipulasi tata letak suatu elemen dalam bidang 1 dimensi dilakukan dengan menggunakan flexbox
+
+5. Apa yang dapat kita gunakan untuk memanipulasi tata letak suatu element dalam bidang 2 dimensi?
+memanipulasi tata letak suatu elemen dalam bidang 2 dimensi dilakukan dengan menggunakan grid
