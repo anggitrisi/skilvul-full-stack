@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import React from "react";
 
 export const CardContainer = styled.div`
   border: rgba(192, 192, 192, 0.5) 1px solid;
@@ -8,7 +7,6 @@ export const CardContainer = styled.div`
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
-  margin: 0.3em;
 `;
 
 export const CardImage = styled.img`
