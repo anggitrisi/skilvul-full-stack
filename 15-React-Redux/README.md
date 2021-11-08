@@ -1,3 +1,3 @@
 # netlify link
 
-redux-shopping-cart-anggi.netlify.app
+https://redux-shopping-cart-anggi.netlify.app/
