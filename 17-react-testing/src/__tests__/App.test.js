@@ -15,7 +15,7 @@ describe("test AddToDo", () => {
         isComplete: false,
       },
     ];
-    const enteredValue = {
+    const newValue = {
       id: 3,
       name: "Learn login",
       isComplete: false,
@@ -31,36 +31,20 @@ describe("test AddToDo", () => {
     // expect(actualListNumber).toBe(expectedListNumber);
 
     // compare OBJECT
-    const expectedList = [
-      {
-        id: 3,
-        name: "Learn login",
-        isComplete: false,
-      },
-      {
-        id: 1,
-        name: "Learn JSX",
-        isComplete: false,
-      },
-      {
-        id: 2,
-        name: "Build awasome react app",
-        isComplete: false,
-      },
-    ];
+    const expectedList = [newValue, ...initialList];
+    const expectedStr = JSON.stringify(expectedList);
 
     // Act
-    const actualList = AddTodo(initialList, enteredValue);
-
-    const compareList = JSON.stringify(expectedList) === JSON.stringify(actualList);
+    const actualList = AddTodo(initialList, newValue);
+    const actualStr = JSON.stringify(actualList);
 
     // Assert
-    expect(true).toBe(compareList);
+    expect(actualStr).toBe(expectedStr);
   });
 
   test("should not mutate the existing todo array", () => {
     // Arrange
-    let initialList = [
+    const initialList = [
       {
         id: 1,
         name: "Learn JSX",
@@ -72,30 +56,19 @@ describe("test AddToDo", () => {
         isComplete: false,
       },
     ];
-    let enteredValue = {
+
+    const enteredValue = {
       id: 3,
       name: "Learn login",
       isComplete: false,
     };
-    let expectedInitialList = [
-      {
-        id: 1,
-        name: "Learn JSX",
-        isComplete: false,
-      },
-      {
-        id: 2,
-        name: "Build awasome react app",
-        isComplete: false,
-      },
-    ];
+    const expectedInitialStr = JSON.stringify(initialList);
 
     // Act
-    AddTodo(initialList, enteredValue);
-    const actualInitialList = initialList;
-    const initialListComparation = JSON.stringify(expectedInitialList) === JSON.stringify(actualInitialList);
+    const actualInitialList = AddTodo(initialList, enteredValue);
+    const actualInitialStr = JSON.stringify(actualInitialList);
 
     // // Assert
-    expect(true).toBe(initialListComparation);
+    expect(actualInitialStr).not.toBe(expectedInitialStr);
   });
 });

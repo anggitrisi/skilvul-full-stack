@@ -3,9 +3,9 @@ import { Add, Substract, Multiplication } from "../Math";
 describe("test Math", () => {
   test("Return sum of two arguments, (5,2) return 7", () => {
     // Arrange
-    const num1 = 5;
-    const num2 = 2;
-    const expectedSum = 7;
+    const num1 = 13;
+    const num2 = 3;
+    const expectedSum = 16;
     // Act
     const actualSum = Add(num1, num2);
     // Assert
@@ -14,9 +14,9 @@ describe("test Math", () => {
 
   test("Return substraction of a - b", () => {
     // Arrange
-    const num1 = 5;
-    const num2 = 2;
-    const expectedSub = 3;
+    const num1 = 13;
+    const num2 = 3;
+    const expectedSub = 10;
     // Act
     const actualSub = Substract(num1, num2);
     // Assert
@@ -25,9 +25,9 @@ describe("test Math", () => {
 
   test("Return multiplication of two arguments", () => {
     // Arrange
-    const num1 = 5;
-    const num2 = 2;
-    const expectedMult = 10;
+    const num1 = 13;
+    const num2 = 3;
+    const expectedMult = 39;
     // Act
     const actualMult = Multiplication(num1, num2);
     // Assert
